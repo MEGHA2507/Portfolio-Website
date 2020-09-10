@@ -5,7 +5,7 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
-.experience-container {
+.contact-container {
     position: relative;
     height: 100vh;
     display: flex;
@@ -22,7 +22,7 @@ body {
     height: 30px;
 }
 
-.container-exp {
+.contact-holder {
     margin: auto;
     padding: 40px;
     background-color: #000000;
@@ -35,30 +35,20 @@ body {
     cursor: pointer;
 }
 
+.contact-btn-container {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px;
+    margin: 5px;
+}
+
 h4 {
     margin: 0;
     margin-bottom: 20px;
     font-size: 30px;
     line-height: 32px;
-}
-
-.company-icon {
-    height: 70px;
-}
-
-p {
-    font-size: 16px;
-    line-height: 20px;
-}
-
-span {
-    font-size: 20px;
-    line-height: 24px;
-    font-weight: 900;
-}
-
-@media (min-width: 0) and (max-width: 767px) {
-    .container-exp {
-        padding: 20px;
-    }
 }
