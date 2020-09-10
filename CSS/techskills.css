@@ -1,0 +1,68 @@
+body {
+    background-color: #38b6ff;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container-techskills {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.cross-container {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.cross-icon {
+    width: 30px;
+    height: 30px;
+}
+
+.tech-skill-container {
+    margin: auto;
+    background-color: #000000;
+    color: #ffffff;
+    width: 70%;
+    padding: 40px;
+    border-radius: 20px;
+}
+
+
+
+h4 {
+    text-align: center;
+    margin: 0;
+    margin-bottom: 20px;
+    font-size: 30px;
+    line-height: 32px;
+}
+
+.skill {
+    padding-bottom: 20px;
+    position: relative;
+}
+
+img {
+    display: inline-block;
+    width: 40px;
+}
+
+
+p {
+    margin: 0;
+    position: absolute;
+    top: 10px;
+    display: inline-block;
+    padding-left: 40px;
+}
+
+@media (min-width: 0px) and (max-width: 767px) {
+    .tech-skill-container {
+        width: 80%;
+        padding: 20px;
+    }
+}
