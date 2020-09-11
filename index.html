@@ -7,26 +7,84 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0-11/css/all.min.css" />
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="CSS/reset.css">
+  <link rel="stylesheet" href="CSS/homepage.css" />
   <title>Portfolio</title>
 </head>
 
 <body>
-  <p>
-    <a href="aboutMe.html">About Me</a>
-  </p>
-  <p>
-    <a href="technicalSkills.html">Technical Skills</a>
-  </p>
-  <p>
-    <a href="experience.html">Experiences</a>
-  </p>
-  <p>
-    <a href="contact.html">Contact Me</a>
-  </p>
-  <p>
-    <a href="interest.html">Interest & Passion</a>
-  </p>
+
+  <div class="homepage-wrapper">
+    <h1>Megha Banerjee</h1>
+    <p class="role">Front End Developer</p>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-md-4 col-lg-3">
+          <a href="aboutMe.html">
+            <div class="card">
+              <img class="card-img-top" src="Images/photo.jpg" alt="Card image cap">
+              <div class="card-body">
+                <p class="card-text">About Me</p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-xs-12 col-md-4 col-lg-3">
+          <a href="technicalSkills.html">
+            <div class="card">
+              <img class="card-img-top" src="Images/techskills.png" alt="Card image cap">
+              <div class="card-body">
+                <p class="card-text">Skills</p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-xs-12 col-md-4 col-lg-3">
+          <a href="experience.html">
+            <div class="card">
+              <img class="card-img-top" src="Images/experience.jpg" alt="Card image cap">
+              <div class="card-body">
+                <p class="card-text">Experiences</p>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-xs-12 col-md-4 col-lg-3">
+          <a href="contact.html">
+            <div class="card">
+              <img class="card-img-top" src="Images/contact.png" alt="Card image cap">
+              <div class="card-body">
+                <p class="card-text">Contact Me</p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-xs-12 col-md-4 col-lg-3">
+          <a href="interest.html">
+            <div class="card">
+              <img class="card-img-top" src="Images/interest_passion.svg" alt="Card image cap">
+              <div class="card-body">
+                <p class="card-text">Hobbies</p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-xs-12 col-md-4 col-lg-3">
+          <a href="project.html">
+            <div class="card">
+              <img class="card-img-top" src="Images/project.png" alt="Card image cap">
+              <div class="card-body">
+                <p class="card-text">Projects</p>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.min.js"></script>
