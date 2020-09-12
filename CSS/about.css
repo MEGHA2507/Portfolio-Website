@@ -2,12 +2,11 @@ body {
     margin: 0;
     padding: 0;
     height: 100vh;
-    background-color: #38b6ff;
+    background-color: #4834d4;
     font-family: 'Roboto', sans-serif;
 }
 
 .cross-container {
-    /* text-align: right; */
     position: relative;
 }
 
@@ -26,6 +25,23 @@ body {
     align-items: center;
 }
 
+.picture-container {
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+    margin-left: 60px;
+    cursor: pointer;
+}
+
+.photo-about {
+    margin: 0 auto;
+    width: 300px;
+    height: 300px;
+    border-radius: 100%;
+    border: 5px solid #000000;
+}
+
+
 .container-about-me {
     display: flex;
     flex-direction: column;
@@ -40,26 +56,96 @@ body {
     cursor: pointer;
 }
 
+.container-about-me:hover {
+    animation-name: headShake;
+    animation-duration: 1s;
+}
+
 h4 {
     margin: 0 auto;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     font-size: 30px;
     line-height: 32px;
 }
 
-.picture-container {
-    display: flex;
-    flex-direction: column;
-    margin: 30px;
-    margin-left: 60px;
+p {
+    margin-bottom: 10px;
 }
 
-.photo-about {
-    margin: 0 auto;
-    width: 300px;
-    height: 300px;
-    border-radius: 100%;
-    border: 5px solid #000000;
+p span {
+    font-weight: 700;
+}
+
+
+@-webkit-keyframes headShake {
+    0% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+
+    6.5% {
+        -webkit-transform: translateX(-6px) rotateY(-9deg);
+        transform: translateX(-6px) rotateY(-9deg);
+    }
+
+    18.5% {
+        -webkit-transform: translateX(5px) rotateY(7deg);
+        transform: translateX(5px) rotateY(7deg);
+    }
+
+    31.5% {
+        -webkit-transform: translateX(-3px) rotateY(-5deg);
+        transform: translateX(-3px) rotateY(-5deg);
+    }
+
+    43.5% {
+        -webkit-transform: translateX(2px) rotateY(3deg);
+        transform: translateX(2px) rotateY(3deg);
+    }
+
+    50% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+
+@keyframes headShake {
+    0% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+
+    6.5% {
+        -webkit-transform: translateX(-6px) rotateY(-9deg);
+        transform: translateX(-6px) rotateY(-9deg);
+    }
+
+    18.5% {
+        -webkit-transform: translateX(5px) rotateY(7deg);
+        transform: translateX(5px) rotateY(7deg);
+    }
+
+    31.5% {
+        -webkit-transform: translateX(-3px) rotateY(-5deg);
+        transform: translateX(-3px) rotateY(-5deg);
+    }
+
+    43.5% {
+        -webkit-transform: translateX(2px) rotateY(3deg);
+        transform: translateX(2px) rotateY(3deg);
+    }
+
+    50% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+
+.headShake {
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-name: headShake;
+    animation-name: headShake;
 }
 
 @media (min-width: 0) and (max-width: 767px) {

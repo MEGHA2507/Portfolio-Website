@@ -1,9 +1,7 @@
 body {
     height: 100vh;
-    /* background-color: #000000; */
     background-size: cover;
     background-repeat: no-repeat;
-    /* background-image: linear-gradient(180deg, blue, black); */
     font-family: 'Roboto', sans-serif;
 }
 
