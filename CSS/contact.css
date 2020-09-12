@@ -41,6 +41,10 @@ body {
     border-radius: 5px;
 }
 
+.fa-twitter-square {
+    color: black;
+}
+
 button {
     padding: 10px;
     margin: 5px;
