@@ -1,21 +1,19 @@
 body {
-    /* background-color: #38b6ff; */
     background-color: #4834d4;
-    height: 100vh;
     margin: 0;
     font-family: 'Roboto', sans-serif;
 }
 
-.container-techskills {
-    height: 100vh;
-    display: flex;
-    align-items: center;
-}
-
+/* cross icon at top */
 .cross-container {
     position: absolute;
     top: 20px;
     right: 20px;
+}
+
+.cross-container:hover {
+    animation-name: pulse;
+    animation-duration: 1s;
 }
 
 .cross-icon {
@@ -23,48 +21,154 @@ body {
     height: 30px;
 }
 
-.tech-skill-container {
-    margin: auto;
-    background-color: #000000;
+h1 {
     color: #ffffff;
-    width: 70%;
-    padding: 40px;
-    border-radius: 20px;
+    font-size: 42px;
+    line-height: 44px;
+    font-weight: 700;
+}
+
+.techskills-wrapper {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.skill-container h4 {
+    text-align: center;
+    padding-bottom: 20px;
+    margin: 0;
+    margin-bottom: 30px;
+    font-size: 30px;
+    line-height: 32px;
+    -webkit-box-shadow: 0px 10px 5px -8px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 10px 5px -8px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 10px 5px -8px rgba(0, 0, 0, 0.75);
+}
+
+.tech-tile {
+    background-color: #ffffff;
+    padding: 30px;
+    padding-bottom: 10px;
+    margin: 20px;
+    width: 20%;
+    min-width: 200px;
+    border-radius: 5px;
     cursor: pointer;
 }
 
-
-
-h4 {
-    text-align: center;
-    margin: 0;
-    margin-bottom: 20px;
-    font-size: 30px;
-    line-height: 32px;
+.tech-tile:hover {
+    animation-name: pulse;
+    animation-duration: 1s;
 }
+
+.skill-container {
+    display: flex;
+    flex-direction: column;
+}
+
 
 .skill {
     padding-bottom: 20px;
     position: relative;
 }
 
-img {
+
+.skill img {
     display: inline-block;
     width: 40px;
+    height: 50px;
+    vertical-align: middle;
 }
 
 
-p {
+.skill p {
     margin: 0;
+    padding-top: 7px;
     position: absolute;
     top: 10px;
     display: inline-block;
     padding-left: 40px;
+    font-weight: 700;
 }
 
-@media (min-width: 0px) and (max-width: 767px) {
-    .tech-skill-container {
-        width: 80%;
+
+@-webkit-keyframes pulse {
+    from {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+
+    50% {
+        -webkit-transform: scale3d(1.05, 1.05, 1.05);
+        transform: scale3d(1.05, 1.05, 1.05);
+    }
+
+    to {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+}
+
+@keyframes pulse {
+    from {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+
+    50% {
+        -webkit-transform: scale3d(1.05, 1.05, 1.05);
+        transform: scale3d(1.05, 1.05, 1.05);
+    }
+
+    to {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+}
+
+.pulse {
+    -webkit-animation-name: pulse;
+    animation-name: pulse;
+}
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .tech-tile {
         padding: 20px;
+        margin: 10px;
+        width: 20%;
+        min-width: 180px;
+    }
+}
+
+
+
+@media (min-width: 0px) and (max-width: 767px) {
+    .tech-tile {
+        min-width: 220px;
+        margin-top: 10px;
+        margin-bottom: 10px;
     }
 }
