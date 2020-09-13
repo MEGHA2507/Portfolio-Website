@@ -3,7 +3,6 @@ body {
     padding: 0;
     height: 100vh;
     background-color: #4834d4;
-    font-family: 'Roboto', sans-serif;
 }
 
 .cross-container {
@@ -74,13 +73,15 @@ h4 {
 }
 
 p {
+    font-size: 16px;
+    line-height: 20px;
     margin-bottom: 10px;
-    font-weight: 700;
+    font-weight: 500;
 }
 
 p span {
-    font-weight: bolder;
-    text-decoration: underline;
+    font-weight: 900;
+    /* text-decoration: underline; */
 }
 
 

@@ -2,7 +2,6 @@ body {
     background-color: #4834d4;
     height: 100vh;
     margin: 0;
-    font-family: 'Roboto', sans-serif;
 }
 
 .experience-container {
@@ -89,6 +88,7 @@ h4 {
 
 .container-exp .exp-desc {
     margin-bottom: 20px;
+    font-weight: 500;
 }
 
 
