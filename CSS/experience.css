@@ -1,5 +1,4 @@
 body {
-    /* background-color: #38b6ff; */
     background-color: #4834d4;
     height: 100vh;
     margin: 0;
@@ -7,9 +6,11 @@ body {
 }
 
 .experience-container {
-    position: relative;
     height: 100vh;
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .cross-container {
@@ -24,42 +25,178 @@ body {
 }
 
 .container-exp {
-    margin: auto;
+    margin: 0 auto;
     padding: 40px;
-    background-color: #000000;
-    color: #ffffff;
+    color: #000000;
+    background-color: #ffffff;
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 80%;
-    border-radius: 20px;
+    border-radius: 5px;
     cursor: pointer;
 }
+
+.container-exp:hover {
+    animation-name: headShake;
+    animation-duration: 1s;
+}
+
 
 h4 {
     margin: 0;
     margin-bottom: 20px;
-    font-size: 30px;
-    line-height: 32px;
+    font-size: 42px;
+    line-height: 44px;
+    color: #ffffff;
+    text-align: center;
+    padding-top: 30px;
 }
 
 .company-icon {
-    height: 70px;
+    height: 50px;
+    margin-bottom: 10px;
 }
 
-p {
-    font-size: 16px;
-    line-height: 20px;
+
+.container-exp h1 {
+    font-size: 36px;
+    line-height: 38px;
+    font-weight: bolder;
+    margin-bottom: 10px;
 }
 
-span {
-    font-size: 20px;
-    line-height: 24px;
+.container-exp h3 {
+    font-size: 24px;
+    line-height: 28px;
+    margin-bottom: 10px;
     font-weight: 900;
 }
 
+
+.container-exp p {
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.container-exp span {
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: bolder;
+}
+
+.container-exp .exp-desc {
+    margin-bottom: 20px;
+}
+
+
+@-webkit-keyframes headShake {
+    0% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+
+    6.5% {
+        -webkit-transform: translateX(-6px) rotateY(-9deg);
+        transform: translateX(-6px) rotateY(-9deg);
+    }
+
+    18.5% {
+        -webkit-transform: translateX(5px) rotateY(7deg);
+        transform: translateX(5px) rotateY(7deg);
+    }
+
+    31.5% {
+        -webkit-transform: translateX(-3px) rotateY(-5deg);
+        transform: translateX(-3px) rotateY(-5deg);
+    }
+
+    43.5% {
+        -webkit-transform: translateX(2px) rotateY(3deg);
+        transform: translateX(2px) rotateY(3deg);
+    }
+
+    50% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+
+@keyframes headShake {
+    0% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+
+    6.5% {
+        -webkit-transform: translateX(-6px) rotateY(-9deg);
+        transform: translateX(-6px) rotateY(-9deg);
+    }
+
+    18.5% {
+        -webkit-transform: translateX(5px) rotateY(7deg);
+        transform: translateX(5px) rotateY(7deg);
+    }
+
+    31.5% {
+        -webkit-transform: translateX(-3px) rotateY(-5deg);
+        transform: translateX(-3px) rotateY(-5deg);
+    }
+
+    43.5% {
+        -webkit-transform: translateX(2px) rotateY(3deg);
+        transform: translateX(2px) rotateY(3deg);
+    }
+
+    50% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+
+.headShake {
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-name: headShake;
+    animation-name: headShake;
+}
+
 @media (min-width: 0) and (max-width: 767px) {
+    h4 {
+        font-size: 28px;
+        line-height: 30px;
+        margin-bottom: 10px;
+    }
+
     .container-exp {
         padding: 20px;
+        width: 70%;
+    }
+
+    .container-exp h1 {
+        font-size: 30px;
+        line-height: 32px;
+        font-weight: bolder;
+        margin-bottom: 5px;
+    }
+
+    .container-exp h3 {
+        font-size: 20px;
+        line-height: 22px;
+        margin-bottom: 5px;
+        font-weight: 900;
+    }
+
+    .container-exp p {
+        font-size: 16px;
+        line-height: 20px;
+        font-weight: 600;
+    }
+
+    .company-icon {
+        height: 30px;
+        margin-bottom: 10px;
     }
 }
