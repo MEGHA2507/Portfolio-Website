@@ -1,279 +1,278 @@
 body {
-    background-color: #4834d4;
-    height: 100vh;
-    margin: 0;
+  background-color: #4834d4;
+  height: 100vh;
+  margin: 0;
 }
 
 .contact-container {
-    position: relative;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  position: relative;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .cross-container {
-    position: absolute;
-    top: 20px;
-    right: 20px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
 }
 
 .cross-icon {
-    width: 30px;
-    height: 30px;
+  width: 30px;
+  height: 30px;
 }
 
 .contact-holder {
-    margin: auto;
-    padding: 40px;
-    background-color: #ffffff;
-    color: #000000;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 80%;
-    border-radius: 20px;
-    cursor: pointer;
+  margin: auto;
+  padding: 40px;
+  background-color: #ffffff;
+  color: #000000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  border-radius: 20px;
+  cursor: pointer;
 }
 
 .contact-btn-container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    width: 50%;
-    background-color: #ffffff;
-    padding: 20px;
-    border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 50%;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 5px;
 }
 
 .contact-buttons {
-    padding: 15px;
-    margin: 20px;
-    width: 120px;
-    text-decoration: none;
-    text-align: center;
-    border-radius: 5px;
-    font-size: 20px;
-    line-height: 22px;
+  padding: 15px;
+  margin: 20px;
+  width: 120px;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 5px;
+  font-size: 20px;
+  line-height: 22px;
 }
 
 .contact-buttons:hover {
-    text-decoration: none;
-    animation-name: pulse;
-    animation-duration: 2s;
+  text-decoration: none;
+  animation-name: pulse;
+  animation-duration: 2s;
 }
 
 .button-text {
-    padding-left: 5px;
+  padding-left: 5px;
 }
 
 button {
-    padding: 10px;
-    margin: 5px;
+  padding: 10px;
+  margin: 5px;
 }
 
 h4 {
-    margin: 0;
-    margin-bottom: 20px;
-    font-size: 42px;
-    line-height: 44px;
-    color: #ffffff;
+  margin: 0;
+  margin-bottom: 20px;
+  font-size: 42px;
+  line-height: 44px;
+  color: #ffffff;
 }
 
 /* email button */
 .fa-envelope-square {
-    color: indianred;
+  color: indianred;
 }
 
 .email-btn:hover .fa-envelope-square {
-    color: #ffffff;
+  color: #ffffff;
 }
 
 .email-btn {
-    border: 2px solid indianred;
-    color: indianred;
+  border: 2px solid indianred;
+  color: indianred;
 }
 
 .email-btn:hover {
-    color: #ffffff;
-    background-color: indianred;
+  color: #ffffff;
+  background-color: indianred;
 }
 
 /* linkedin button */
 
 .linkedin-btn {
-    border: 2px solid #0073b1;
-    color: #0073b1;
+  border: 2px solid #0073b1;
+  color: #0073b1;
 }
 
 .linkedin-btn:hover {
-    color: #ffffff;
-    background-color: #0073b1;
+  color: #ffffff;
+  background-color: #0073b1;
 }
 
 .fa-linkedin {
-    color: #0073b1;
+  color: #0073b1;
 }
 
 .linkedin-btn:hover .fa-linkedin {
-    color: #ffffff;
+  color: #ffffff;
 }
 
 /*git hub*/
 
 .github-btn {
-    border: 2px solid#24292e;
-    color: #24292e;
+  border: 2px solid#24292e;
+  color: #24292e;
 }
 
 .github-btn:hover {
-    color: #ffffff;
-    background-color: #24292e;
+  color: #ffffff;
+  background-color: #24292e;
 }
 
 .fa-github-square {
-    color: #24292e;
+  color: #24292e;
 }
 
 .github-btn:hover .fa-github-square {
-    color: #ffffff;
+  color: #ffffff;
 }
 
 /* twitter */
 .twitter-btn {
-    border: 2px solid rgb(27, 149, 224);
-    color: rgb(27, 149, 224);
+  border: 2px solid rgb(27, 149, 224);
+  color: rgb(27, 149, 224);
 }
 
 .twitter-btn:hover {
-    color: #ffffff;
-    background-color: rgb(27, 149, 224);
+  color: #ffffff;
+  background-color: rgb(27, 149, 224);
 }
 
 .fa-twitter {
-    color: rgb(27, 149, 224);
+  color: rgb(27, 149, 224);
 }
 
 .twitter-btn:hover .fa-twitter {
-    color: #ffffff;
+  color: #ffffff;
 }
-
 
 /*facebook*/
 
 .facebook-btn {
-    border: 2px solid #3578E5;
-    color: #3578E5;
+  border: 2px solid #3578e5;
+  color: #3578e5;
 }
 
 .facebook-btn:hover {
-    color: #ffffff;
-    background-color: #3578E5;
+  color: #ffffff;
+  background-color: #3578e5;
 }
 
 .fa-facebook-square {
-    color: #3578E5;
+  color: #3578e5;
 }
 
 .facebook-btn:hover .fa-facebook-square {
-    color: #ffffff;
+  color: #ffffff;
 }
 
 /*insta button*/
 .insta-btn {
-    border: 2px solid #c13584;
-    color: #c13584;
+  border: 2px solid #c13584;
+  color: #c13584;
 }
 
 .insta-btn:hover {
-    color: #ffffff;
-    background-color: #c13584;
+  color: #ffffff;
+  background-color: #c13584;
 }
 
 .fa-instagram {
-    color: #c13584;
+  color: #c13584;
 }
 
 .insta-btn:hover .fa-instagram {
-    color: #ffffff;
+  color: #ffffff;
 }
 
 @-webkit-keyframes pulse {
-    from {
-        -webkit-transform: scale3d(1, 1, 1);
-        transform: scale3d(1, 1, 1);
-    }
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
 
-    50% {
-        -webkit-transform: scale3d(1.05, 1.05, 1.05);
-        transform: scale3d(1.05, 1.05, 1.05);
-    }
+  50% {
+    -webkit-transform: scale3d(1.05, 1.05, 1.05);
+    transform: scale3d(1.05, 1.05, 1.05);
+  }
 
-    to {
-        -webkit-transform: scale3d(1, 1, 1);
-        transform: scale3d(1, 1, 1);
-    }
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
 }
 
 @keyframes pulse {
-    from {
-        -webkit-transform: scale3d(1, 1, 1);
-        transform: scale3d(1, 1, 1);
-    }
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
 
-    50% {
-        -webkit-transform: scale3d(1.05, 1.05, 1.05);
-        transform: scale3d(1.05, 1.05, 1.05);
-    }
+  50% {
+    -webkit-transform: scale3d(1.05, 1.05, 1.05);
+    transform: scale3d(1.05, 1.05, 1.05);
+  }
 
-    to {
-        -webkit-transform: scale3d(1, 1, 1);
-        transform: scale3d(1, 1, 1);
-    }
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
 }
 
 .pulse {
-    -webkit-animation-name: pulse;
-    animation-name: pulse;
+  -webkit-animation-name: pulse;
+  animation-name: pulse;
 }
 
-
 @media (min-width: 0px) and (max-width: 767px) {
-    .contact-btn-container {
-        width: 60%;
-    }
+  .contact-btn-container {
+    width: 60%;
+  }
 
-    h4 {
-        font-size: 30px;
-    }
+  h4 {
+    font-size: 30px;
+  }
 
-    .contact-btn-container {
-        flex-direction: column;
-        align-items: center;
-        padding: 10px;
-    }
+  .contact-btn-container {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
 
-    .contact-buttons {
-        padding: 10px;
-        margin: 10px;
-    }
+  .contact-buttons {
+    padding: 10px;
+    margin: 10px;
+    width: 140px;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
-    .contact-btn-container {
-        width: 70%;
-    }
+  .contact-btn-container {
+    width: 70%;
+  }
 
-    .contact-buttons {
-        padding: 10px;
-        margin: 10px;
-    }
+  .contact-buttons {
+    padding: 10px;
+    margin: 10px;
+  }
 }
 
 @media (min-width: 1550px) {
-    .contact-btn-container {
-        width: 60%;
-    }
+  .contact-btn-container {
+    width: 60%;
+  }
 }
