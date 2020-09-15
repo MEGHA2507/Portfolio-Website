@@ -4,6 +4,7 @@ body {
     height: 100vh;
     background-color: #4834d4;
     padding: 20px;
+    font-family: sans-serif;
 }
 
 h1 {
@@ -13,29 +14,48 @@ h1 {
     text-align: center;
 }
 
+.cross-container {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.cross-icon {
+    width: 30px;
+    height: 30px;
+}
+
 .project-tile-row {
     justify-content: center;
 }
 
 .project-tiles {
+    height: fit-content;
     padding: 20px;
     margin: 20px;
     background-color: #ffffff;
     border-radius: 5px;
     text-align: center;
+    cursor: pointer;
+}
+
+.project-tiles:hover {
+    animation-name: pulse;
+    animation-duration: 2s;
 }
 
 .project-image {
     width: inherit;
+    height: 250px;
     border-radius: 5px;
     margin-bottom: 10px;
-    border: 1px solid #000;
+    /* border: 1px solid #000; */
 }
 
 .project-title {
     font-size: 22px;
     line-height: 24px;
-    font-weight: 500;
+    font-weight: 600;
     text-align: center;
     margin-bottom: 10px;
 }
@@ -62,6 +82,46 @@ h1 {
     background-color: #ffffff;
     color: #000;
     border-radius: 2px;
+}
+
+
+@-webkit-keyframes pulse {
+    from {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+
+    50% {
+        -webkit-transform: scale3d(1.05, 1.05, 1.05);
+        transform: scale3d(1.05, 1.05, 1.05);
+    }
+
+    to {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+}
+
+@keyframes pulse {
+    from {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+
+    50% {
+        -webkit-transform: scale3d(1.05, 1.05, 1.05);
+        transform: scale3d(1.05, 1.05, 1.05);
+    }
+
+    to {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+}
+
+.pulse {
+    -webkit-animation-name: pulse;
+    animation-name: pulse;
 }
 
 @media (min-width:0px) and (max-width: 767px) {
