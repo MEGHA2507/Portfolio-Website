@@ -1,6 +1,7 @@
 body {
     background-color: #4834d4;
     margin: 0;
+    height: 100vh;
 }
 
 /* cross icon at top */
@@ -34,7 +35,7 @@ h1 {
     align-items: center;
     justify-content: center;
     padding: 20px;
-    height: 100vh;
+
 }
 
 .container {
