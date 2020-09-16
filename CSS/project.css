@@ -243,6 +243,7 @@ h1 {
 
     .project-image {
         margin-bottom: 10px;
+        height: 150px;
     }
 
     .project-title {
@@ -255,7 +256,13 @@ h1 {
         margin-bottom: 10px;
     }
 
-    .view-project-btn {
+    .view-project-btn,
+    .see-project-btn {
         padding: 10px;
+    }
+
+    .scroll-indicator-up,
+    .scroll-indicator-down {
+        display: none;
     }
 }
