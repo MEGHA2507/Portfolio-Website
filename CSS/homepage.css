@@ -9,6 +9,7 @@ body {
   overflow-x: hidden;
 }
 
+
 .homepage-intro-container {
   display: flex;
   flex-direction: column;
@@ -257,6 +258,10 @@ a:hover {
   .homepage-intro-container {
     width: 100%;
   }
+
+  /* .homepage-wrapper {
+    height: 100vh;
+  } */
 
   .card-text {
     font-size: 24px;
