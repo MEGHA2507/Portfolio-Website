@@ -26,6 +26,7 @@ body {
 .container-exp {
     margin: 0 auto;
     padding: 40px;
+    padding-top: 25px;
     color: #000000;
     background-color: #ffffff;
     display: flex;
