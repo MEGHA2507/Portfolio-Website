@@ -113,6 +113,9 @@ h1 {
     font-weight: 700;
 }
 
+.fa{
+    display: none;
+}
 
 @-webkit-keyframes pulse {
     from {
@@ -170,5 +173,13 @@ h1 {
         min-width: 220px;
         margin-top: 10px;
         margin-bottom: 10px;
+    }
+    .fa{
+        display: inline;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+    .skill-holder{
+        display: none;
     }
 }
