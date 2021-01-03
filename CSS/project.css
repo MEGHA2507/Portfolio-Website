@@ -123,9 +123,9 @@ h1 {
 
 }
 
-.fa{
+/* .fa{
     display: none;
-}
+} */
 .rotate {
     transform: rotate(180deg);
 }
@@ -266,13 +266,9 @@ h1 {
         margin-left: 20px;
     }
 
-    .project-details, .hide{
+    /* .project-details{
         display: none;
-    }
-
-    .show{
-        display: inline;
-    }
+    } */
 
     .view-project-btn,
     .see-project-btn {
