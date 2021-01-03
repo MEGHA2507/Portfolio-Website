@@ -9,7 +9,7 @@ function scrolling(event) {
     var scrolled = (winScroll / height) * 100;
 
     if (winScroll === height) {
-        console.log('max height reached');
+        // console.log('max height reached');
 
         if (document.querySelector('.scroll-indicator-down').classList.contains('show')) {
             document.querySelector('.scroll-indicator-down').classList.remove('show');
@@ -35,5 +35,18 @@ function scrolling(event) {
             document.querySelector('.scroll-indicator-down').classList.add('show');
         }
 
+    }
+}
+
+function showprojectDetails(event){
+    const project = event.target;
+
+    if(project.parentElement.nextSibling.nextSibling.classList.contains('hide')){
+        project.parentElement.nextSibling.nextSibling.classList.remove('hide');
+        project.parentElement.nextSibling.nextSibling.classList.add('show');
+    }
+    else{
+        project.parentElement.nextSibling.nextSibling.classList.remove('show');
+        project.parentElement.nextSibling.nextSibling.classList.add('hide');
     }
 }
