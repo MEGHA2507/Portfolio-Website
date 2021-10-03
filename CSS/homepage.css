@@ -224,6 +224,7 @@ a:hover {
 
 @media (min-width: 0) and (max-width: 767px) {
   .homepage-intro-container {
+    margin: 15px;
     margin-top: 10px;
     margin-bottom: 30px;
   }
